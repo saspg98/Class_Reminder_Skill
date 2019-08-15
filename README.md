@@ -1,2 +1,2 @@
-# Class_Reminder_Skill
+# Class Reminder Skill
 Alexa Class Reminder Skill using Reminder API
