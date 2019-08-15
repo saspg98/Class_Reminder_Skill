@@ -1,0 +1,654 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "class reminder",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "CreateReminderIntent",
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "samples": [
+                "turn on reminder for {date}",
+                "set it as {date}",
+                "set it for {date}",
+                "add the reminder for {date}",
+                "create the reminder for {date}",
+                "set the reminder for {date}",
+                "play the reminder on {date}",
+                "set the date as {date}",
+                "{date}"
+              ]
+            },
+            {
+              "name": "subject",
+              "type": "SUBJECT",
+              "samples": [
+                "turn on {date} reminder for {subject} {type}",
+                "turn on {date} reminder for {subject}",
+                "create {date} reminder for {subject} {type}",
+                "create {date} reminder for {subject}",
+                "add {date} reminder for {subject} {type}",
+                "add {date} reminder for {subject}",
+                "set {date} reminder for {subject} {type}",
+                "set {date} reminder for {subject}",
+                "set the reminder for {subject} {type} on {date}",
+                "Turn on the reminder for {subject} {type} on {date}",
+                "{subject} {type} on {date}",
+                "{subject} on {date}",
+                "for {subject} {type} on {date}",
+                "for {subject} on {date}",
+                "create reminder for {subject} {type} on {date}",
+                "create reminder for {subject} on {date}",
+                "set reminder for {subject} {type} on {date}",
+                "turn on reminder for {subject} {type} on {date}",
+                "turn on reminder for {subject} on {date}",
+                "set reminder for {subject} on {date}",
+                "set the reminder for {subject} {type}",
+                "Turn on the reminder for {subject} {type}",
+                "{subject}",
+                "{subject} {type}",
+                "for {subject} {type}",
+                "for {subject}",
+                "add reminder for {subject} {type}",
+                "add reminder for {subject}",
+                "create reminder for {subject} {type}",
+                "create reminder for {subject}",
+                "set reminder for {subject} {type}",
+                "turn on reminder for {subject} {type} ",
+                "turn on reminder for {subject} ",
+                "set reminder for {subject}"
+              ]
+            },
+            {
+              "name": "type",
+              "type": "TYPE"
+            }
+          ],
+          "samples": [
+            "add reminder for my {subject} {type} ",
+            "set reminder for my {subject} {type} ",
+            "create reminder for my  {subject} {type}",
+            "turn on reminder for my {subject} {type}",
+            "turn on reminder for {subject} {type}",
+            "create reminder for  {subject} {type}",
+            "set reminder for {subject} {type} ",
+            "add reminder for {subject} {type} ",
+            "remind me for my {subject} {type}",
+            "remind me for {subject} {type}",
+            "remind me for {date} {type}",
+            "remind me for my {type} {date}",
+            "turn on reminders for my {type} {date}",
+            "add reminders for my {type} {date}",
+            "create reminders for my {type} {date}",
+            "set reminders for my {type} {date}",
+            "remind me for my {subject} {type} {date}",
+            "create {date} reminder for {subject}",
+            "create {date} reminder for {subject} {type}",
+            "turn on {date} reminder for {subject} {type}",
+            "turn on {date} reminder for {subject}",
+            "add {date} reminder for {subject} {type}",
+            "add {date} reminder for {subject}",
+            "set {date} reminder for {subject} {type}",
+            "set {date} reminder for {subject}",
+            "remind me for {subject} {type} {date}",
+            "Turn on reminder for {subject} {type} {date}",
+            "Turn on reminder for my {type} {subject} {date}",
+            "Turn on reminder for {type} {subject} {date}",
+            "Turn on reminders for {type} {date}",
+            "set reminders for {type} {date}",
+            "add reminders for {type} {date}",
+            "create reminders for {type} {date}",
+            "create reminders for {date} {type}",
+            "add reminders for {date} {type}",
+            "set reminders for {date} {type}",
+            "create reminder for my {type} {subject} {date}",
+            "create reminder for {subject} {type} {date}",
+            "add reminder for {subject} {type} {date}",
+            "set reminder for {subject} {type} {date}",
+            "set reminder for {type} {subject} {date}",
+            "add reminder for my {type} {subject} {date}",
+            "add reminder for {type} {subject} {date}",
+            "create reminder for {type} {subject} {date}"
+          ]
+        },
+        {
+          "name": "DeleteReminderIntent",
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "samples": [
+                "turn off reminder for {date}",
+                "delete it for {date}",
+                "delete the reminder for {date}",
+                "dont play the reminder on {date}",
+                "delete the date as {date}",
+                "{date}"
+              ]
+            },
+            {
+              "name": "subject",
+              "type": "SUBJECT",
+              "samples": [
+                "Turn off the reminder for {subject} ",
+                "turn off {date} reminder for {subject} {type}",
+                "turn off {date} reminder for {subject}",
+                "delete {date} reminder for {subject} {type}",
+                "delete {date} reminder for {subject}",
+                "{subject} {type} on {date}",
+                "{subject} on {date}",
+                "for {subject} {type} on {date}",
+                "for {subject} on {date}",
+                "delete reminder for {subject} {type} on {date}",
+                "delete reminder for {subject} on {date}",
+                "turn off reminder for {subject} {type} on {date}",
+                "turn off reminder for {subject} on {date}",
+                "Turn off the reminder for {subject} {type}",
+                "{subject}",
+                "{subject} {type}",
+                "for {subject} {type}",
+                "for {subject}",
+                "delete reminder for {subject} {type}",
+                "delete reminder for {subject}",
+                "turn off reminder for {subject} {type} ",
+                "turn off reminder for {subject} "
+              ]
+            },
+            {
+              "name": "type",
+              "type": "TYPE"
+            }
+          ],
+          "samples": [
+            "delete reminder for {subject} {type} ",
+            "turn off reminder for {subject} {type}",
+            " dont remind me for {subject} {type} ",
+            " dont remind me for my {subject} {type} ",
+            "turn off reminder for my {subject} {type} ",
+            "delete reminder for my {subject} {type} ",
+            "delete {date} reminders for my {subject} {type}",
+            "turn off {date} reminders for my {subject} {type}",
+            "turn off {date} reminder for my {subject} {type}",
+            "delete {date} reminder for my {subject} {type}",
+            "dont remind me for my {type}  {date}",
+            "turn off reminders for my {type} {date}",
+            "delete reminders for my {type} {date}",
+            "dont remind me for {date} {type}",
+            "turn off reminders for {date} {type}",
+            "dont remind me for my {subject} {type} {date}",
+            "turn off {date} reminder for {subject} {type}",
+            "turn off {date} reminder for {subject}",
+            "delete {date} reminder for {subject} {type}",
+            "delete {date} reminder for {subject}",
+            "dont remind me for {subject} {type} {date}",
+            "Turn off reminder for {subject} {type} {date}",
+            "Turn off reminder for my {type} {subject} {date}",
+            "Turn off reminder for {type} {subject} {date}",
+            "delete reminders for {date} {type}",
+            "delete reminder for my {type} {subject} {date}",
+            "delete reminder for {subject} {type} {date}",
+            "delete reminder for {type} {subject} {date}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cloud computing"
+              }
+            },
+            {
+              "name": {
+                "value": "discrete mathematics"
+              }
+            },
+            {
+              "name": {
+                "value": "geography"
+              }
+            },
+            {
+              "name": {
+                "value": "yoga"
+              }
+            },
+            {
+              "name": {
+                "value": "games"
+              }
+            },
+            {
+              "name": {
+                "value": "political science"
+              }
+            },
+            {
+              "name": {
+                "value": "history"
+              }
+            },
+            {
+              "name": {
+                "value": "chemistry "
+              }
+            },
+            {
+              "name": {
+                "value": "biology"
+              }
+            },
+            {
+              "name": {
+                "value": "physics"
+              }
+            },
+            {
+              "name": {
+                "value": "science"
+              }
+            },
+            {
+              "name": {
+                "value": "mathematics"
+              }
+            },
+            {
+              "name": {
+                "value": "english"
+              }
+            },
+            {
+              "name": {
+                "value": "principles of programming language"
+              }
+            },
+            {
+              "name": {
+                "value": "theory of computation"
+              }
+            },
+            {
+              "name": {
+                "value": "operating systems",
+                "synonyms": [
+                  "OS"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "neural networks and fuzzy logic",
+                "synonyms": [
+                  "NNFL"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "data mining"
+              }
+            },
+            {
+              "name": {
+                "value": "Artificial Intelligence",
+                "synonyms": [
+                  "AI"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Foundation of data science",
+                "synonyms": [
+                  "FODS"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "database systems",
+                "synonyms": [
+                  "DBMS"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "machine learning",
+                "synonyms": [
+                  "ML"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "computer science",
+                "synonyms": [
+                  "CS"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Human Computer interaction",
+                "synonyms": [
+                  "HCI"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "software engineering"
+              }
+            },
+            {
+              "name": {
+                "value": "distributed systems"
+              }
+            },
+            {
+              "name": {
+                "value": "embedded systems"
+              }
+            },
+            {
+              "name": {
+                "value": "parallel computing"
+              }
+            },
+            {
+              "name": {
+                "value": "Computer Architecture",
+                "synonyms": [
+                  "COMPARC"
+                ]
+              }
+            }
+          ],
+          "name": "SUBJECT"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "lab",
+                "synonyms": [
+                  "labs"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "tutorial",
+                "synonyms": [
+                  "tutorials",
+                  "tut"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "class",
+                "synonyms": [
+                  "all classes",
+                  "classes"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "lecture",
+                "synonyms": [
+                  "lectures",
+                  "all lectures"
+                ]
+              }
+            }
+          ],
+          "name": "TYPE"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CreateReminderIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.269840675119"
+          },
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.421184223525.1477824572763"
+              }
+            },
+            {
+              "name": "subject",
+              "type": "SUBJECT",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1275830609697.949748675962"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.752629359353.127116942895.538055515941"
+                }
+              ]
+            },
+            {
+              "name": "type",
+              "type": "TYPE",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.752629359353.1170374619359.720393724738"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DeleteReminderIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.700591311876"
+          },
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1311324007588.1280571034584"
+              }
+            },
+            {
+              "name": "subject",
+              "type": "SUBJECT",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1311324007588.477477013912"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.666882408716.789640220201.1529285988929"
+                }
+              ]
+            },
+            {
+              "name": "type",
+              "type": "TYPE",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.666882408716.138102463703.1256365355664"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Confirm.Intent.907099680127",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you like me to remind you for your lectures ?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.269840675119",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "would you like me to set reminder for {subject} {type} on {date} ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.421184223525.1406848193106",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what's the name of the subject?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.421184223525.399210047153",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please tell me name of the class for which you want to set the reminder."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.421184223525.1477824572763",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Tell me a date for the reminder"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1275830609697.949748675962",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what's the name of the subject for which you want  to set the reminder?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1311324007588.1280571034584",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "For what date the reminder was set ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1311324007588.477477013912",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what's the name of the subject for which you want  to delete the reminder?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.700591311876",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "would you like me to delete reminder for {subject} {type} on {date} ?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.752629359353.127116942895.538055515941",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What is the subject for which you want to set the reminder ?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.666882408716.789640220201.1529285988929",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What is the subject for which you want to delete the reminder ?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.666882408716.138102463703.1256365355664",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please append 'class' or 'lecture' after subject name and then try again ."
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.752629359353.1170374619359.720393724738",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please append 'class' or 'lecture' after subject name and then try again ."
+          }
+        ]
+      }
+    ]
+  },
+  "version": "44"
+}
